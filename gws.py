@@ -57,7 +57,7 @@ for link in links:
 
 
 # scrape the results page; unfortunately, this URL has to be updated manually
-URL = "https://www.google.com/search?source=hp&ei=V6zsXN2RCcemoATqs7OoAw&q=chocolate&oq=chocolate&gs_l=mobile-gws-wiz-hp.3..0j46l2j0l5.3285.5362..5639...0.0..0.219.1763.0j5j4......0....1.......8..41j0i131j46i275.mNHGFzr_jX8"
+URL = "https://www.google.com/search?q=chocolate"
 result = requests.get(URL)
 src = result.content
 soup = BeautifulSoup(src, 'lxml')
